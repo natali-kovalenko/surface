@@ -18,7 +18,7 @@ gulp.task('copy:fonts', () => gulp
 gulp.task('copy:lib', () => gulp.task('copy:lib', () => gulp
   .src(config.src.lib + '/**/*.*')
   .pipe(gulp.dest(config.dest.lib))
-);
+));
 
 
 const build = gulp => gulp.series('copy:img', 'copy:fonts');

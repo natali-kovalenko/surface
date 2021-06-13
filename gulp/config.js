@@ -9,8 +9,8 @@ const config = {
 
     src: {
         root         : 'src',
-        sass         : 'src/sass',
-        lib           : 'src/lib',
+        sass         : 'src/scss',
+        lib          : 'src/lib',
         img          : 'src/img',
         fonts        : 'src/fonts'
     },
@@ -37,7 +37,9 @@ const config = {
         );
     },
 
-    errorHandler: require('./util/handle-errors')
+    errorHandler: function (error) {
+        console.log(error);
+    }
 };
 
 config.setEnv(production ? 'production' : 'development');

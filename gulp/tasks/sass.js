@@ -2,7 +2,6 @@ import gulp from 'gulp';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
 import config from '../config';
 import csso from 'postcss-csso';
 

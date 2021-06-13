@@ -1,10 +1,12 @@
-$mainColor: #5e42b0;
-$whiteColor: #fff;
-$fontSize: 20px;
-$container: 1560px;
-$mainFontFamily: 'proxima_nova_regular', sans-serif;
-$lightFontFamily: 'proxima_nova_light', sans-serif;
-$boldFontFamily: 'proxima_nova_bold', sans-serif;
+@import "helpers/variables";
+@import "helpers/normalize";
+
+@import "libs/slick";
+@import "libs/slick-theme";
+
+@import "fonts/fonts";
+
+
 
 * {
   margin: 0;
@@ -202,7 +204,7 @@ ul {
   padding: 0 26px 0 63px;
 }
 
-/* athlets-section */  
+/* athlets-section */
 /* players-section */
 .container {
   max-width: $container;
@@ -650,7 +652,7 @@ ul {
 }
 
 @media screen and (max-width: 1670px) {
-  .square, 
+  .square,
   .square-reverse {
     width: 116px;
     height: 116px;
@@ -696,7 +698,7 @@ ul {
     padding: 2% 6%;
   }
 
-  .square, 
+  .square,
   .square-reverse {
     top: 150px;
   }
@@ -761,7 +763,7 @@ ul {
     width: 100%;
     padding: 9% 4% 10% 30px;
     justify-content: flex-start;
-  } 
+  }
 
   .reverse {
     display: flex;
@@ -1001,7 +1003,7 @@ ul {
 }
 
 
-@media screen and (max-width: 599px) { 
+@media screen and (max-width: 599px) {
 
   body {
     font-size: 15px;
