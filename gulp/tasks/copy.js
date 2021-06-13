@@ -11,18 +11,18 @@ gulp.task('copy:img', () => gulp
 );
 
 gulp.task('copy:fonts', () => gulp
-  .src(config.src.fonts + '/*.{ttf,eot,woff,woff2}')
+  .src(config.src.fonts + '/**/*.{ttf,eot,woff,woff2}')
   .pipe(gulp.dest(config.dest.fonts))
 );
 
-gulp.task('copy:lib', () => gulp.task('copy:lib', () => gulp
+gulp.task('copy:lib', () => gulp
   .src(config.src.lib + '/**/*.*')
   .pipe(gulp.dest(config.dest.lib))
-));
+);
 
 
-const build = gulp => gulp.series('copy:img', 'copy:fonts');
-const watch = gulp => () => gulp.watch(config.src.img + '/*', gulp.parallel('copy:img', 'copy:fonts'));
+const build = gulp => gulp.series('copy:img', 'copy:fonts', 'copy:lib');
+const watch = gulp => () => gulp.watch(config.src.img + '/*', gulp.parallel('copy:img', 'copy:fonts', 'copy:lib'));
 
 module.exports.build = build;
 module.exports.watch = watch;
