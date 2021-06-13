@@ -1,3 +1,11 @@
+$mainColor: #5e42b0;
+$whiteColor: #fff;
+$fontSize: 20px;
+$container: 1560px;
+$mainFontFamily: 'proxima_nova_regular', sans-serif;
+$lightFontFamily: 'proxima_nova_light', sans-serif;
+$boldFontFamily: 'proxima_nova_bold', sans-serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +13,8 @@
 }
 
 body {
-  font-family: 'proxima_nova_regular', sans-serif;
-  font-size: 20px;
+  font-family: $mainFontFamily;
+  font-size: $fontSize;
 }
 
 img {
@@ -25,7 +33,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1560px;
+  max-width: $container;
   margin: 0 auto;
   padding: 50px 20px 0 20px;
 }
@@ -37,9 +45,9 @@ img {
 
 .header-text {
   font-size: 14px;
-  font-family: 'proxima_nova_light', sans-serif;
+  font-family: $lightFontFamily;
   z-index: 2;
-  color: #fff;
+  color: $whiteColor;
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -62,7 +70,7 @@ img {
 .top-box {
   padding: 312px 20px 110px 20px;
   position: relative;
-  max-width: 1560px;
+  max-width: $container;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -71,8 +79,8 @@ img {
 
 /* h1 - title */
 .title {
-  font-family: 'proxima_nova_bold', sans-serif;
-  color: #fff;
+  font-family: $boldFontFamily;
+  color: $whiteColor;
   font-size: 90px;
   text-transform: uppercase;
   margin: 0;
@@ -85,7 +93,7 @@ img {
   position: absolute;
   width: 430px;
   height: 4px;
-  background-color: #5e42b0;
+  background-color: $mainColor;
   transform: rotate(310deg);
   top: 44%;
   left: 20%;
@@ -95,8 +103,8 @@ img {
   position: relative;
   display: block;
   text-align: right;
-  font-family: 'proxima_nova_bold', sans-serif;
-  color: #fff;
+  font-family: $boldFontFamily;
+  color: $whiteColor;
   font-size: 90px;
   text-transform: uppercase;
   margin: 0;
@@ -110,7 +118,7 @@ ul {
 
 .nav-item {
   font-size: 14px;
-  font-family: 'proxima_nova_light', sans-serif;
+  font-family: $lightFontFamily;
   text-transform: uppercase;
   font-weight: 100;
   padding: 0 25px;
@@ -148,11 +156,11 @@ ul {
 }
 
 .btn a {
-  font-family: 'proxima_nova_light', sans-serif;
+  font-family: $lightFontFamily;
   width: 311px;
   height: 77px;
-  background-color: #5e42b0;
-  color: #fff;
+  background-color: $mainColor;
+  color: $whiteColor;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 38px;
@@ -197,7 +205,7 @@ ul {
 /* athlets-section */  
 /* players-section */
 .container {
-  max-width: 1560px;
+  max-width: $container;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -233,7 +241,7 @@ ul {
   font-size: 90px;
   color: #e7e7e7;
   text-transform: uppercase;
-  font-family: 'proxima_nova_bold', sans-serif;
+  font-family: $boldFontFamily;
 }
 
 .athlets-box .sub-title,
@@ -250,7 +258,7 @@ ul {
   color: #c1c1c1;
   text-transform: uppercase;
   font-size: 36px;
-  font-family: 'proxima_nova_bold', sans-serif;
+  font-family: $boldFontFamily;
   padding-left: 15px;
 }
 
@@ -298,7 +306,7 @@ ul {
 }
 
 .athlets-growth {
-  background-color: #5e42b0;
+  background-color: $mainColor;
   min-height: 297px;
 }
 
@@ -308,14 +316,13 @@ ul {
 }
 
 .text-about {
-  font-family: 'proxima_nova_regular', sans-serif;
   line-height: 28px;
   padding-top: 30px;
 }
 
 .athlets-growth .text-about,
 .players-growth .text-about {
-  color: #fff;
+  color: $whiteColor;
 }
 
 .flex-number {
@@ -324,10 +331,10 @@ ul {
 }
 
 .mini-number {
-  font-family: 'proxima_nova_bold', sans-serif;
+  font-family: $boldFontFamily;
   font-size: 18px;
   font-weight: 700;
-  border-bottom: 4px solid #5e42b0;
+  border-bottom: 4px solid $mainColor;
   padding-bottom: 4px;
 }
 
@@ -336,7 +343,7 @@ ul {
 }
 
 .players-growth .mini-number {
-  border-color: #fff;
+  border-color: $whiteColor;
   color: #9173e6;
 }
 
@@ -366,7 +373,7 @@ ul {
 .line-dark {
   width: 22px;
   height: 5px;
-  background: #5e42b0;
+  background: $mainColor;
   border-radius: 30px;
   margin: 9% 0 2% 0;
 }
@@ -467,7 +474,7 @@ ul {
 .square {
   width: 168px;
   height: 155px;
-  background-color: #5e42b0;
+  background-color: $mainColor;
   position: absolute;
   top: 212px;
   left: 0;
@@ -477,7 +484,7 @@ ul {
 .square-reverse {
   width: 168px;
   height: 155px;
-  background-color: #5e42b0;
+  background-color: $mainColor;
   position: absolute;
   top: 212px;
   right: 0;
@@ -515,7 +522,7 @@ ul {
 .call-app {
   position: relative;
   display: block;
-  font-family: 'proxima_nova_bold', sans-serif;
+  font-family: $boldFontFamily;
   color: #a496ca;
   font-size: 34px;
   text-transform: uppercase;
@@ -565,7 +572,7 @@ ul {
   position: absolute;
   width: 400px;
   height: 4px;
-  background-color: #5e42b0;
+  background-color: $mainColor;
   transform: rotate(310deg);
   top: 60%;
   left: 37%;
@@ -576,15 +583,15 @@ ul {
   position: absolute;
   width: 240px;
   height: 4px;
-  background-color: #5e42b0;
+  background-color: $mainColor;
   transform: rotate(310deg);
   top: 50%;
   left: -5%;
 }
 
 .footer__title {
-  font-family: 'proxima_nova_bold', sans-serif;
-  color: #fff;
+  font-family: $boldFontFamily;
+  color: $whiteColor;
   font-size: 90px;
   text-transform: uppercase;
   margin: 0;
@@ -634,11 +641,11 @@ ul {
 }
 
 .info {
-  color: #fff;
+  color: $whiteColor;
 }
 
 .info-link {
-  color: #fff;
+  color: $whiteColor;
   text-decoration: none;
 }
 
@@ -1301,7 +1308,7 @@ ul {
 
   .athlets-growth .mini-number,
   .players-growth .mini-number {
-    border-color: #5e42b0;
+    border-color: $mainColor;
   }
 
 }
